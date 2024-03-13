@@ -22,21 +22,21 @@
     </header>
     <center><h1>FashionSetGo</h1></center>
         <!-- <h2>Login to Your Account</h2> -->
-    <div class=" form-container ">
-        <form action="your-login-processing-page.php" method="post">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" placeholder="Username" required>
-        
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" placeholder="Password"  required>
-        
-        <input type="submit" value="Login">
-        <div class="container signin">
-            <p>Don't have an account? <a href="Register.html">Sign Up</a>.</p>
-          </div>
-        </form>
-    </div> 
-    <br><br>
+        <div class="form-container">
+            <form id="loginForm" action="your-login-processing-page.php" method="post">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" placeholder="Username" required>
+                
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Password" required>
+                
+                <input type="submit" value="Login">
+                <div class="container signin">
+                    <p>Don't have an account? <a href="Register.html">Sign Up</a>.</p>
+                </div>
+            </form>
+        </div> 
+        <br><br>
 
     <footer>
         <br>
@@ -47,5 +47,15 @@
     
         <!-- Add links to important pages in the footer -->
     </footer>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+            // Prevent the form from submitting
+            event.preventDefault();
+            // Display the success message
+            alert("You have successfully logged in!");
+            // Optionally, you can redirect the user to another page
+            // window.location.href = "success.html";
+        });
+    </script>
 </body>
 </html>
