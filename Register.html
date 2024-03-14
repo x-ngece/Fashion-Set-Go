@@ -22,9 +22,8 @@
     <center><h1>FashionSetGo</h1></center>
     <!-- <h2>Registration Form</h2> -->
      
-    <div class=" form-container ">
-    <form action="/action_page.php">
-        <!-- <div class="container"> -->
+    <div class="form-container">
+      <form id="registrationForm" action="/action_page.php">
           <p>Please fill in this form to create an account.</p>
 
           <label for="name"><b>Name:</b></label>
@@ -43,7 +42,8 @@
           <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat" required>
       
           <button type="submit" class="registerbtn">Register</button><p>Already have an account? <a href="Login.html">Sign in</a>.</p>
-        </div>
+      </form>
+  </div> 
         
       </form>
       <br><br>
@@ -57,6 +57,15 @@
     
         <!-- Add links to important pages in the footer -->
     </footer>
-
+    <script>
+      document.getElementById("registrationForm").addEventListener("submit", function(event) {
+          // Prevent the form from submitting
+          event.preventDefault();
+          // Display the success message
+          alert("You have successfully registered!");
+          // Optionally, you can redirect the user to the login page
+          // window.location.href = "Login.html";
+      });
+  </script>
     </body>
 </html>
