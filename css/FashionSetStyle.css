@@ -66,6 +66,7 @@ hr {
 
 h1, h2, h3 {
     margin: 10px 0;
+    text-align: center;
 }
 
 img {
@@ -85,7 +86,9 @@ article {
 footer {
     background-color: black;
     color: #fff;
-    padding: 20px 0;
+    padding: 10px 0;
+    text-align: center;
+    margin-bottom: 20px; /* Adjust the value to suit your spacing needs */
 }
 
 /* Media Queries for Responsive Design */

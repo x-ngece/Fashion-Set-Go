@@ -45,6 +45,66 @@ nav {
     color: #ffc107;
 }
 
+.nav-links #close{
+    display: none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0; /* Adjusted from left: 0 to right: 0 */
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    display: flex;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar li {
+    padding: 15px;
+    text-align: center;
+}
+
+.sidebar a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #f1f1f1;
+}
+
+#closeSidebar {
+    display:none ;
+    position: fixed; /* Use fixed position for consistent placement */
+    top: 10px;
+    right: 10px; /* Adjust the right property for positioning */
+    font-size: 30px;
+    color: #818181;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#closeSidebar:hover {
+    color: #f1f1f1;
+}
+
+#menu {
+    display: none; /* Hide the bars icon initially */
+}
+
 .logo {
     width: auto; /* Adjust size as needed */
     height: auto;
@@ -135,5 +195,26 @@ footer {
     text-align: center;
     margin-bottom: 20px; /* Adjust the value to suit your spacing needs */
 }
+
+@media only screen and (max-width: 768px) {
+    #menu {
+        display: block; /* Show the bars icon when the screen size is smaller */
+    }
+
+    .nav-links {
+        display: none; /* Hide the navigation links initially on smaller screens */
+    }
+
+    .sidebar {
+        width: 80%; /* Adjust the width for smaller screens */
+        padding-top: 30px; /* Adjust padding for smaller screens */
+    }
+
+    #closeSidebar {
+        display: block;
+    }
+}
+
+
 
 

@@ -1,0 +1,134 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+
+body{
+    margin: auto;
+    padding: 0%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ffc107;
+}
+
+h1{
+    text-align: center;
+}
+
+hr {
+    border: 1px solid #333;
+    margin: 20px 0;
+}
+
+.subscribe {
+    text-align: center;
+    padding: 50px 0; /* Adjust the padding as needed */
+}
+
+.container {
+    max-width: 800px; /* Adjust the max-width as needed */
+    margin: 0 auto;
+}
+
+.form-container {
+    width: 300px; /* Adjust the maximum width as needed */
+    margin: 0 auto; /* Center the form container horizontally */
+    background-color: rgb(167, 167, 167); /* Background color for the container */
+    padding: 20px; /* Add padding for spacing within the container */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
+}
+
+.form-container form {
+    text-align: center; /* Align the form elements to the left within the container */
+
+}
+
+.form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+}
+
+.form button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Add hover effect to the button */
+.form button:hover {
+    background-color: #45a049;
+}
+
+.contact-list {
+    list-style: none;
+    padding: 10px;
+}
+
+.contact-list li {
+    margin-bottom: 20px;
+}
+
+.contact-list strong {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-column {
+    margin-top: 20px; /* Adjust the margin-top value as needed */
+}
+
+.contact-list {
+    list-style: none;
+    padding: 0;
+}
+
+.contact-list li {
+    margin-bottom: 20px;
+}
+
+.contact-list strong {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+
+
+
