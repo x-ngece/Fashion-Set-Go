@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+<<<<<<< HEAD
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,6 +25,28 @@
         
         </header>
     
+=======
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="CSS/Mens.css">
+    <link rel="stylesheet" href="CSS/FashionSetStyle.css">
+    <title>MEN Page</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html"><img src="1.png" alt="Company Logo" class="logo"></a>
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="UsAbout.html">About</a></li>
+                <li><a href="Contact us.html">Contact</a></li>
+                <li><a onclick="openCartModal()">Cart</a></li>
+                <li><a href="Login.html">Login</a></li>
+            </ul>
+        </nav>
+>>>>>>> origin/master
         </div>
         <hr>
         <center><h1>MEN's Clothing</h1></center>
@@ -36,7 +59,7 @@
                 <img src="images/men-01.jpg" alt="Men's Shirt">     <img src="images/men-02.jpg" alt="Men's Shirt">     <img src="images/men-03.jpg" alt="Men's Shirt">
                 CARGO JACKET                                             DENIM JACKET                                             SWEATER
                 999.00 ZAR                                               799.00 ZAR                                               399.00 ZAR
-                <a href="cart.html"><button>ADD TO CART</button></a>                                          <a href="cart.html"><button>ADD TO CART</button></a>                                          <a href="cart.html"><button>ADD TO CART</button></a>
+                <button onclick="addToCart(0)">ADD TO CART</button>                                          <button onclick="addToCart(1)">ADD TO CART</button>                                          <button onclick="addToCart(2)">ADD TO CART</button>
             </pre>
             <br>
         </section>
@@ -51,17 +74,27 @@
         <section>
             <pre>
                                         <img src="images/single-product-02.jpg" alt="">
-                                        Black'n'White Leather Sneaker<br>                                        799.00 ZAR<br>                                        <a href="cart.html"><button>ADD TO CART</button></a>
+                                        Black'n'White Leather Sneaker<br>                                        799.00 ZAR<br>                                       <button onclick="addToCart(3)">ADD TO CART</button>
 
 
 
                                         <img src="images/single-product-01.jpg" alt="">
                                         White Leather Sneaker with Black Heel
                                         799.00 ZAR
-                                        <a href="cart.html"><button>ADD TO CART</button></a>
+                                        <button onclick="addToCart(4)">ADD TO CART</button>
             </pre>
         </section>
         <br>
+         <!-- The cart modal -->
+        <div id="cartModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="closeCartModal()">&times;</span>
+                <h2>Cart Contents</h2>
+                <div id="cartContents"></div>
+                <button onclick="clearCart()">Clear Cart</button>
+            </div>
+        </div>
     </main>
     <footer>
         <br>
@@ -72,5 +105,6 @@
     
         <!-- Add links to important pages in the footer -->
     </footer>
+    <script src="js/cart.js"></script>
 </body>
 </html>
