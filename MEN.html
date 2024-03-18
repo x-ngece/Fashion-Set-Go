@@ -1,31 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-<<<<<<< HEAD
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="CSS/FashionSetStyle.css">
-        <title>Welcome to Fashion Set Online Store</title>
-        <link rel="icon" type="image/x-icon" href="1.png">
-        
-    </head>
-    <body>
-        <header>
-            <nav>
-                <a href="index.html"><img src="1.png" alt="Company Logo" class="logo" align="left"></a>
-                <label for="menu-toggle" class="menu-icon">&#9776;</label>
-                <ul class="nav-links">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="UsAbout.html">About</a></li>
-                    <li><a href="Contact us.html">Contact</a></li>
-                    <li><a href="Login.html">Login</a></li>
-                    <li><a href="Register.html">Register</a></li>
-                </ul>
-            </nav>
-        
-        </header>
-    
-=======
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -46,12 +20,11 @@
                 <li><a href="Login.html">Login</a></li>
             </ul>
         </nav>
->>>>>>> origin/master
         </div>
         <hr>
         <center><h1>MEN's Clothing</h1></center>
         <hr>
-   
+    </header>
     <main>
         <br>
         <section>
@@ -59,7 +32,7 @@
                 <img src="images/men-01.jpg" alt="Men's Shirt">     <img src="images/men-02.jpg" alt="Men's Shirt">     <img src="images/men-03.jpg" alt="Men's Shirt">
                 CARGO JACKET                                             DENIM JACKET                                             SWEATER
                 999.00 ZAR                                               799.00 ZAR                                               399.00 ZAR
-                <button onclick="addToCart(0)">ADD TO CART</button>                                          <button onclick="addToCart(1)">ADD TO CART</button>                                          <button onclick="addToCart(2)">ADD TO CART</button>
+                <button onclick="addToCart(0)" class="butt">ADD TO CART</button>                                    <button onclick="addToCart(1)" class="butt">ADD TO CART</button>                                    <button onclick="addToCart(2)" class="butt">ADD TO CART</button>
             </pre>
             <br>
         </section>
@@ -74,14 +47,14 @@
         <section>
             <pre>
                                         <img src="images/single-product-02.jpg" alt="">
-                                        Black'n'White Leather Sneaker<br>                                        799.00 ZAR<br>                                       <button onclick="addToCart(3)">ADD TO CART</button>
+                                        Black'n'White Leather Sneaker<br>                                        799.00 ZAR<br>                                       <button onclick="addToCart(3)" class="butt">ADD TO CART</button>
 
 
 
                                         <img src="images/single-product-01.jpg" alt="">
                                         White Leather Sneaker with Black Heel
                                         799.00 ZAR
-                                        <button onclick="addToCart(4)">ADD TO CART</button>
+                                        <button onclick="addToCart(4)" class="butt">ADD TO CART</button>
             </pre>
         </section>
         <br>
@@ -92,7 +65,7 @@
                 <span class="close" onclick="closeCartModal()">&times;</span>
                 <h2>Cart Contents</h2>
                 <div id="cartContents"></div>
-                <button onclick="clearCart()">Clear Cart</button>
+                <button onclick="clearCart()" class="butt">Clear Cart</button>
             </div>
         </div>
     </main>

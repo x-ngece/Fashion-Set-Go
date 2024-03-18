@@ -16,7 +16,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="UsAbout.html">About</a></li>
                 <li><a href="Contact us.html">Contact</a></li>
-                <li><a href="Register.html">Register</a></li>
+                <li><a onclick="openCartModal()">Cart</a></li>
                 <li><a href="Login.html">Login</a></li>
             </ul>
         </nav>
@@ -31,10 +31,20 @@
                 <img src="images/kid-01.jpg" alt="Men's Shirt">     <img src="images/kid-02.jpg" alt="Men's Shirt">     <img src="images/kid-03.jpg" alt="Men's Shirt">
                 <b>Kid's Jacket + Scarf</b>                                     <b>Floral Short-Sleeve long-Shirt</b>                           <b>Chequered-shirt + Corduroy-pants</b>
                 380.00 ZAR                                               159.00 ZAR                                               320.00 ZAR
-                <a href="cart.html"><button>ADD TO CART</button></a>                                          <a href="cart.html"><button>ADD TO CART</button></a>                                          <a href="cart.html"><button>ADD TO CART</button></a>
+                <button onclick="addToCart(11)" class="butt">ADD TO CART</button>                                    <button onclick="addToCart(12)" class="butt">ADD TO CART</button>                                    <button onclick="addToCart(13)" class="butt">ADD TO CART</button>
             </pre>
             <br>
         </section>
+        <!-- The cart modal -->
+        <div id="cartModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close" onclick="closeCartModal()">&times;</span>
+                <h2>Cart Contents</h2>
+                <div id="cartContents"></div>
+                <button onclick="clearCart()" class="butt">Clear Cart</button>
+            </div>
+        </div>
     </main>
     <footer>
         <br>
@@ -45,5 +55,6 @@
     
         <!-- Add links to important pages in the footer -->
     </footer>
+    <script src="js/cart.js"></script>
 </body>
 </html>
