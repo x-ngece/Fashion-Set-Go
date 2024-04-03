@@ -56,7 +56,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #ffc107;
+    color: #DA5726;
 }
 
 hr {
@@ -184,7 +184,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #ffc107;
+    color: #DA5726;
 }
 
 h1{
@@ -192,7 +192,7 @@ h1{
 }
 
 hr {
-    border: 1px solid #333;
+    border: 2px solid #DA5726;
     margin: 20px 0;
 }
 
@@ -209,7 +209,7 @@ hr {
 .form-container {
     width: 300px; /* Adjust the maximum width as needed */
     margin: 0 auto; /* Center the form container horizontally */
-    background-color: rgb(167, 167, 167); /* Background color for the container */
+    background-color:white; /* Background color for the container */
     padding: 20px; /* Add padding for spacing within the container */
     border-radius: 5px; /* Optional: Add rounded corners */
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle box shadow */
@@ -233,7 +233,7 @@ hr {
 }
 
 .form button {
-    background-color: #4CAF50;
+    background-color: #DA5726;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -242,7 +242,7 @@ hr {
 
 /* Add hover effect to the button */
 .form button:hover {
-    background-color: #45a049;
+    background-color: #DA5726;
 }
 
 .contact-list {

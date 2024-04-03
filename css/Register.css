@@ -47,7 +47,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #ffc107;
+    color: #DA5726;
 }
 
 .form-container {
@@ -78,7 +78,7 @@ input {
 }
 
 button.registerbtn {
-    background-color: #3498db;
+    background-color: #DA5726;
     color: white;
     padding: 10px;
     border: none;
@@ -87,7 +87,7 @@ button.registerbtn {
 }
 
 button.registerbtn:hover {
-    background-color: #2980b9;
+    background-color: #DA5726;
 }
 
 .container.signin {
@@ -97,7 +97,7 @@ button.registerbtn:hover {
 
 .container.signin a {
     text-decoration: none;
-    color: #3498db;
+    color: #DA5726;
     font-weight: bold;
 }
 
