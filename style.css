@@ -444,3 +444,61 @@ button:hover, a:hover {
     height: 1em;
     margin: 2em 0.5em 0em 0em;
 }
+
+
+/* Style the dropdown button */
+.dropbtn {
+    color: black;
+    border: none;
+  }
+  
+  /* Dropdown container */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown content (hidden by default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Style the sub-menu */
+  .sub-menu {
+    display: none;
+    padding-left: 20px;
+  }
+  
+  /* Show the sub-menu when parent menu item is hovered */
+  .dropdown-content .sub-menu a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the sub-menu when parent menu item is hovered */
+  .dropdown-content .sub-menu {
+    display: block;
+  }
+  

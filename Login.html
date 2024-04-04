@@ -27,15 +27,19 @@
             <form id="loginForm" action="your-login-processing-page.php" method="post">
                 <label for="username">Username:</label>
                 <input type="text" id="username" name="username" placeholder="Username" required>
-                
+                            
                 <label for="password">Password:</label>
                 <input type="password" id="password" name="password" placeholder="Password" required>
+                
+                <label for="confirmPassword">Confirm Password:</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required>
                 
                 <input type="submit" value="Login">
                 <div class="container signin">
                     <p>Don't have an account? <a href="Register.html">Sign Up</a>.</p>
                 </div>
             </form>
+
         </div> 
     <br><br>
 
@@ -46,13 +50,32 @@
     </footer>
     <script>
         document.getElementById("loginForm").addEventListener("submit", function(event) {
-            // Prevent the form from submitting
-            event.preventDefault();
-            // Display the success message
-            alert("You have successfully logged in!");
-            // Optionally, you can redirect the user to another page
-            // window.location.href = "success.html";
-        });
+    // Prevent the form from submitting
+    event.preventDefault();
+
+    // Check if passwords match
+    var password = document.getElementById("password").value;
+    var confirmPassword = document.getElementById("confirmPassword").value;
+    if (password !== confirmPassword) {
+        alert("Passwords do not match!");
+        return;
+    }
+
+    // Check if email format is correct
+    var email = document.getElementById("username").value;
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(email)) {
+        alert("Invalid email format!");
+        return;
+    }
+
+    // Display the success message
+    alert("You have successfully logged in!");
+
+    // Optionally, you can redirect the user to another page
+    // window.location.href = "success.html";
+});
+
     </script>
 </body>
 </html>
