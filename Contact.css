@@ -34,7 +34,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #ffc107;
+    color: #DA5726;
 }
 
 h1{
@@ -83,7 +83,7 @@ hr {
 }
 
 .form button {
-    background-color: #4CAF50;
+    background-color: #DA5726;
     color: white;
     padding: 10px 15px;
     border: none;
@@ -92,7 +92,7 @@ hr {
 
 /* Add hover effect to the button */
 .form button:hover {
-    background-color: #45a049;
+    background-color: #DA5726;
 }
 
 .contact-list {

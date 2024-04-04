@@ -46,7 +46,7 @@ nav {
 }
 
 .nav-links li a:hover {
-    color: #ffc107;
+    color: #DA5726;
 }
 
 .form-container {
@@ -77,13 +77,13 @@ input {
 }
 
 input[type="submit"] {
-    background-color: #4caf50;
+    background-color: #DA5726;
     color: white;
     cursor: pointer;
 }
 
 input[type="submit"]:hover {
-    background-color: #45a049;
+    background-color: #DA5726;
 }
 
 .container.signin {
@@ -93,7 +93,7 @@ input[type="submit"]:hover {
 
 .container.signin a {
     text-decoration: none;
-    color: #3498db;
+    color: #DA5726;
     font-weight: bold;
 }
 
