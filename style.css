@@ -189,10 +189,17 @@ article {
 }
 
 footer {
-    background-color: black;
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+  height: auto;
+  position: relative;
+  width: 100%;
+  background-color: black;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer .footer_container {
+  position: relative;
 }
 
 @media only screen and (max-width: 768px) {
