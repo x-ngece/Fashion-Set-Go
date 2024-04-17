@@ -1,13 +1,7 @@
 *{
-    margin: 0%;
-    padding: 0%;
+    margin: 0;
+    padding: 0;
 }
-
-body{
-    margin: auto;
-    padding: 0%;
-}
-
 nav {
     display: flex;
     justify-content: space-between;
@@ -127,14 +121,6 @@ hr {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
-}
-
-footer {
-    background-color: black;
-    color: #fff;
-    padding: 10px 0;
-    text-align: center;
-    margin-bottom: 20px; /* Adjust the value to suit your spacing needs */
 }
 
 
