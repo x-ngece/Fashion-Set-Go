@@ -4,10 +4,11 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="CSS/Register.css">
+        <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
         <title>Register</title>
     </head>
-    <body>
-      <header>
+<body>
+    <header>
         <nav>
             <a href="index.html"><img src="1.png" alt="Company Logo" class="logo"></a>
             <label for="menu-toggle" class="menu-icon">&#9776;</label>
@@ -19,74 +20,97 @@
                 <li><a href="Login.html">Login</a></li>
             </ul>
         </nav>
-      </header>
-    <center><h1>FashionSetGo</h1></center>
-    <!-- <h2>Registration Form</h2> -->
-     
-    <div class="form-container">
-        <form id="registrationForm" action="/action_page.php">
-            <p>Please fill in this form to create an account.</p>
-        
-            <label for="name"><b>Name:</b></label>
-            <input type="text" placeholder="Enter Name" name="name" id="name" required>
-        
-            <label for="surname"><b>Surname:</b></label>
-            <input type="text" placeholder="Enter Surname" name="surname" id="surname" required>
-        
-            <label for="email"><b>Email:</b></label>
-            <input type="email" placeholder="Enter Email" name="email" id="email" required>
-        
-            <label for="psw"><b>Password:</b></label>
-            <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
-        
-            <label for="psw-repeat"><b>Confirm Password:</b></label>
-            <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat" required>
-        
-            <button type="submit" class="registerbtn">Register</button>
-            <p>Already have an account? <a href="Login.html">Sign in</a>.</p>
-        </form>
-  </div> 
-        
-      </form>
-      <br><br>
+    </header>
+    <main>
+        <center><h1>FashionSetGo</h1></center>
 
-      <footer>
-        <br>
-        <br>
-        <center>
-            <p>&copy; <strong>2024 FashionSetGo Online Store. All rights reserved.</strong></p>
-        </center>
-    
-        <!-- Add links to important pages in the footer -->
+        <!-- <h2>Registration Form</h2> -->
+
+        <div class="form-container">
+            <form id="registrationForm" action="/action_page.php">
+                <p>Please fill in this form to create an account.</p>
+            
+                <label for="name"><b>Name:</b></label>
+                <input type="text" placeholder="Enter Name" name="name" id="name" required>
+            
+                <label for="surname"><b>Surname:</b></label>
+                <input type="text" placeholder="Enter Surname" name="surname" id="surname" required>
+            
+                <label for="email"><b>Email:</b></label>
+                <input type="email" placeholder="Enter Email" name="email" id="email" required>
+            
+                <label for="psw"><b>Password:</b></label>
+                <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+            
+                <label for="psw-repeat"><b>Confirm Password:</b></label>
+                <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat" required>
+            
+                <button type="submit" class="registerbtn">Register</button>
+                <p>Already have an account? <a href="Login.html">Sign in</a>.</p>
+            </form>
+        </div>
+        <br><br>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="footer-col">
+                    <h4>Customer Service</h4>
+                    <ul>
+                        <li><a href="#">Help & FAQ's</a></li>
+                        <li><a href="#">Delivery information</a></li>
+                        <li><a href="#">Returns Information</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>FashionSetGo the Brand</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Information</h4>
+                    <ul>
+                        <li><a href="#">Terms and Conditions</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Socials</h4>
+                    <div class="social-links">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </footer>
-    <script>
-       document.getElementById("registrationForm").addEventListener("submit", function(event) {
-    // Prevent the form from submitting
-    event.preventDefault();
+</body>
+<script>
+    document.getElementById("registrationForm").addEventListener("submit", function(event) {
+        // Prevent the form from submitting
+        event.preventDefault();
 
-    // Check if passwords match
-    var password = document.getElementById("psw").value;
-    var confirmPassword = document.getElementById("psw-repeat").value;
-    if (password !== confirmPassword) {
-        alert("Passwords do not match!");
-        return;
-    }
+        // Check if passwords match
+        var password = document.getElementById("psw").value;
+        var confirmPassword = document.getElementById("psw-repeat").value;
 
-    // Check if email format is correct
-    var email = document.getElementById("email").value;
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    if (!emailRegex.test(email)) {
-        alert("Invalid email format!");
-        return;
-    }
+        if (password !== confirmPassword) {
+            return alert("Passwords do not match!");
+        }
 
-    // Display the success message
-    alert("You have successfully registered!");
+        // Check if email format is correct
+        var email = document.getElementById("email").value;
+        var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-    // Optionally, you can redirect the user to the login page
-    // window.location.href = "Login.html";
-});
+        if (!emailRegex.test(email)) {
+            return alert("Invalid email format!");
+        }
 
-  </script>
-    </body>
+         // Display the success message
+        alert("You have successfully registered!");
+    });
+</script>
 </html>
